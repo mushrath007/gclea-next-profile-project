@@ -5,7 +5,8 @@ body{
 .team{
   padding:75px 0;
 }
-h6.description{
+h2.description{
+  text-align: center;
   font-weight: bold;
   letter-spacing: 2px;
   color: #999;
@@ -30,16 +31,7 @@ h6.description{
   display: block;
   position: relative;
 }
-.profile .img-box:after{
-  content:"";
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-}
+
 .img-box ul{
   position: absolute;
   z-index: 2;
@@ -51,24 +43,7 @@ h6.description{
   margin:0px;
   opacity: 0;
 }
-.profile .img-box:after, .img-box ul, .img-box ul li{
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-.img-box ul i{
-  font-size: 20px;
-  letter-spacing: 10px;
-}
-.img-box ul li{
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border: 1px solid #88C425;
-  margin: 2px;
-  padding: 5px;
-  display: inline-block;
-}
+
 .img-box a{
   color:#fff;
 }
@@ -96,4 +71,60 @@ a:hover{
 }
 i.red{
   color:#BC0213;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.27);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.color-close{
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

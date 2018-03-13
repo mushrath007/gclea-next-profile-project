@@ -10,10 +10,23 @@ export class TeamProfilesComponent implements OnInit {
 
   teamInfoMetadata: any;
 
-  ngOnInit() {
-    this.teamInfoMetadata = TeamInfoMetadata;}
+  showHide:boolean;
 
-  constructor() { }
+  constructor() {
+    this.showHide = false;
+  }
+
+  showInfo(){
+    this.showHide = !this.showHide;
+  }
+
+  hideInfo(){
+    this.showHide = false;
+  }
+
+  ngOnInit() {
+    this.teamInfoMetadata = TeamInfoMetadata;
+  }
 
 
 }
