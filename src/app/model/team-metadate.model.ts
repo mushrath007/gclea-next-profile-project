@@ -42,5 +42,32 @@ export const TeamInfoMetadata = [
     githubLinks: 'https://mushrath007.github.io/mywork-angular/',
     content: '',
     gitlinkShow: true
+  },
+  {
+    id: 6,
+    name: 'Aarif',
+    currentOccupation: 'Background: HTML,CSS,Javascript,Phyton,Java',
+    iconPath: '/assets/images/placeholder_male.png',
+    githubLinks: 'https://aarif1.github.io/gclea_next/',
+    content: '',
+    gitlinkShow: true
+  },
+  {
+    id: 7,
+    name: 'Aamir',
+    currentOccupation: 'Background: HTML,CSS,Javascript',
+    iconPath: '/assets/images/placeholder_male.png',
+    githubLinks: 'https://razak18.github.io/gclea_next1/',
+    content: '',
+    gitlinkShow: true
+  },
+  {
+    id: 8,
+    name: 'Ahmed',
+    currentOccupation: 'Background: HTML,CSS,Javascript',
+    iconPath: '/assets/images/placeholder_male.png',
+    githubLinks: 'https://elmho01.github.io/GCLEA-Next',
+    content: '',
+    gitlinkShow: true
   }
 ];
